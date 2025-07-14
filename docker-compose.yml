@@ -1,0 +1,16 @@
+services:
+  cleanseerr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cleanseerr
+    environment:
+      OVERSEERR_URL: ""
+      OVERSEERR_KEY: ""
+      JELLYSEERR_URL: ""
+      JELLYSEERR_KEY: ""
+      SONARR_URL: ""
+      SONARR_KEY: ""
+      RADARR_URL: ""
+      RADARR_KEY: ""
+    restart: no
